@@ -1,6 +1,7 @@
 {
     "name": "My First PWA",
     "gcm_sender_id": "133596126775",
+    "X-Auth-Token": "7892e19b828f465986c3515e26e745de",
     "short_name": "My PWA",
     "description": "Aplikasi PWA pertama saya",
     "start_url": "/index.html",

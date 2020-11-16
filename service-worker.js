@@ -10,6 +10,7 @@ var urlsToCache = [
   "/css/materialize.min.css",
   "/js/materialize.min.js",
   "/manifest.json",
+  "/match.json",
   "/js/nav.js",
   "/js/api.js",
   "/js/idb.js",
@@ -26,7 +27,7 @@ self.addEventListener("install", function(event) {
 });
 
 self.addEventListener("fetch", function(event) {
-  var base_url = "http://readerapi.codepolitan.com/";
+  var base_url = "https://api.football-data.org/v2/";
 
   if (event.request.url.indexOf(base_url) > -1) {
     event.respondWith(
